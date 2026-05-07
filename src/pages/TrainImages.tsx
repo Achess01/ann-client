@@ -217,7 +217,7 @@ export default function TrainImages() {
       labels: iterations,
       datasets: [
         {
-          label: 'Perdida',
+          label: 'Error',
           data: lossPoints,
           borderColor: '#ff6b35',
           backgroundColor: 'rgba(255, 107, 53, 0.2)',
@@ -275,9 +275,6 @@ export default function TrainImages() {
       <header className="page-header">
         <div>
           <h1 className="title">Entrenamiento con imagenes</h1>
-          <p className="hint">
-            Controla el entrenamiento en tiempo real y observa los pesos.
-          </p>
         </div>
         <Link to="/" className="nav-link">
           Volver al menu
@@ -358,7 +355,7 @@ export default function TrainImages() {
               <strong>{status.iteration}</strong>
             </div>
             <div className="status-item">
-              <span>Perdida actual</span>
+              <span>Error actual</span>
               <strong>{status.loss.toFixed(4)}</strong>
             </div>
             <div className="status-item">
@@ -414,7 +411,7 @@ export default function TrainImages() {
 
         <div className="grid-2">
           <div className="chart-card">
-            <h3>Perdida vs Iteracion</h3>
+            <h3>Error vs Iteracion</h3>
             <Line data={lossData} options={chartOptions} />
           </div>
           <div className="chart-card">

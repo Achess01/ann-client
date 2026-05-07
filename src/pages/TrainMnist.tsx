@@ -41,9 +41,6 @@ export default function TrainMnist() {
       <header className="page-header">
         <div>
           <h1 className="title">Entrenamiento con MNIST</h1>
-          <p className="hint">
-            Inicia un entrenamiento rapido y revisa las metricas finales.
-          </p>
         </div>
         <Link to="/" className="nav-link">
           Volver al menu
@@ -61,7 +58,7 @@ export default function TrainMnist() {
           {result ? (
             <div className="status-grid">
               <div className="status-item">
-                <span>Perdida final (entrenamiento)</span>
+                <span>Error final (entrenamiento)</span>
                 <strong>{result.metrics.final_train_loss.toFixed(4)}</strong>
               </div>
               <div className="status-item">
@@ -69,16 +66,12 @@ export default function TrainMnist() {
                 <strong>{result.metrics.final_train_accuracy.toFixed(4)}</strong>
               </div>
               <div className="status-item">
-                <span>Perdida (test)</span>
+                <span>Error (test)</span>
                 <strong>{result.metrics.test_loss.toFixed(4)}</strong>
               </div>
               <div className="status-item">
                 <span>Exactitud (test)</span>
                 <strong>{result.metrics.test_accuracy.toFixed(4)}</strong>
-              </div>
-              <div className="status-item">
-                <span>Ruta del modelo</span>
-                <strong>{result.model_path}</strong>
               </div>
             </div>
           ) : (
