@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "chart.js": "^4.5.1",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.6",
+    "react-force-graph-3d": "^1.29.1",
+    "react-router-dom": "^7.15.1",
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
