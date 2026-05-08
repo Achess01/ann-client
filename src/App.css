@@ -168,18 +168,11 @@
 }
 
 .graph-wrapper {
-  height: 600px;
+  height: 1000px;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--border);
   background: #0c0f12;
-  position: relative;
-}
-
-.graph-wrapper canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 
 .chart-card {
