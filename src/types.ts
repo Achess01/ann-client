@@ -6,6 +6,9 @@ export type ClientMessage =
       learningRate: number
       batchSize: number
       use_trained: boolean
+      images_b64: string[]
+      labels: number[],
+      num_images: number,
     }
   | { type: 'stop' }
   | { type: 'resume' }
